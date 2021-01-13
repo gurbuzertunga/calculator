@@ -1,0 +1,26 @@
+@import "~bootstrap/scss/bootstrap";
+
+.app {
+  width: 600px;
+  padding-top: 200px;
+}
+
+.btn {
+  height: 100px;
+  border-radius: 0;
+  border: 1px rgb(167, 170, 170) solid;
+}
+
+.display {
+  height: 100px;
+  font-size: 40px;
+  color: white;
+}
+
+#orange {
+  background-color: rgb(231, 117, 9);
+}
+
+.h100 {
+  height: 100vh;
+}
