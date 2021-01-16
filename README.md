@@ -51,7 +51,7 @@ To get this project up and running locally, "yarn install" is needed to be run i
 👤 **Mahmoud Abbas**
 
 - Github: [@mahmoud717](https://github.com/mahmoud717)
-- Linkedin: [@LamiaSristy](https://www.linkedin.com/in/mahmoud-m-abbas/)
+- Linkedin: [@mahmoudAbbas](https://www.linkedin.com/in/mahmoud-m-abbas/)
 
 ## Show your support
 
