@@ -76,11 +76,13 @@ export default function calculate(obj, buttonName) {
   }
 
   if (obj.operation) {
-    return {
-      total: operate(obj.total, obj.next, obj.operation),
-      next: null,
-      operation: buttonName,
-    };
+    if (obj.next) {
+      return {
+        total: operate(obj.total, obj.next, obj.operation),
+        next: null,
+        operation: buttonName,
+      };
+    }
   }
 
   if (!obj.next) {
