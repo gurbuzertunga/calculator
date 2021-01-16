@@ -1,15 +1,29 @@
 import PropTypes from 'prop-types';
 
-const Display = ({ value }) => (
-  <div className="display w-100 d-flex justify-content-end align-items-center">
-    {value}
+const Display = ({ next, op, total }) => (
+
+  <div className="display w-100 d-flex flex-column justify-content-end align-items-center">
+    <div className="total w-100 d-flex justify-content-end align-items-center">
+      {total !== 0 ? total : ''}
+    </div>
+    <div className="op w-100 d-flex justify-content-end align-items-center">
+      {op}
+    </div>
+    <div className="next  w-100 d-flex justify-content-end align-items-center">
+      {next}
+    </div>
+
   </div>
 );
 
 Display.propTypes = {
-  value: PropTypes.string,
+  next: PropTypes.string,
+  op: PropTypes.string,
+  total: PropTypes.string,
 };
 Display.defaultProps = {
-  value: '0',
+  next: '0',
+  op: '0',
+  total: '0',
 };
 export default Display;

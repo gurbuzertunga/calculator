@@ -1,9 +1,7 @@
+import PropTypes from 'prop-types';
 import Button from './button';
 
-function ButtonPanel() {
-  const handleClick = () => {
-
-  };
+function ButtonPanel({ handleClick }) {
   return (
     <div className="buttonPanel bg-dark w-100 rounded ">
       <div className="component-button-panel d-flex flex-column w-100 ">
@@ -42,3 +40,10 @@ function ButtonPanel() {
   );
 }
 export default ButtonPanel;
+ButtonPanel.propTypes = {
+  handleClick: PropTypes.func,
+};
+
+ButtonPanel.defaultProps = {
+  handleClick: PropTypes.func,
+};
