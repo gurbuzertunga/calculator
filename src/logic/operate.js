@@ -15,8 +15,5 @@ export default function operate(numberOne, numberTwo, operation) {
   if (operation === '÷') {
     return figureOne.div(figureTwo).toString();
   }
-  if (operation === '%') {
-    return figureOne.mod(figureTwo).toString();
-  }
   return 'error';
 }

@@ -62,6 +62,14 @@ export default function calculate(obj, buttonName) {
     return {};
   }
 
+  if (buttonName === '%') {
+    if (obj.next) {
+      return { total: (obj.next * 0.01).toString(), next: null };
+      // eslint-disable-next-line no-else-return
+    } else if (obj.total) {
+      return { total: (obj.total * 0.01).toString() };
+    }
+  }
   if (buttonName === '+/-') {
     if (obj.next) {
       return { next: (-1 * parseFloat(obj.next)).toString() };
