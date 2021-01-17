@@ -4,7 +4,7 @@ const Display = ({ next, op, total }) => (
 
   <div className="display w-100 d-flex flex-column justify-content-end align-items-center">
     <div className="total w-100 d-flex justify-content-end align-items-center">
-      {total !== 0 ? total : ''}
+      {total}
     </div>
     <div className="op w-100 d-flex justify-content-end align-items-center">
       {op}

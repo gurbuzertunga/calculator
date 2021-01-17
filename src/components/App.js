@@ -11,10 +11,11 @@ function App() {
   function handleClick(e) {
     if (e.target.classList.contains('math-btn')) {
       var result = calculate({ total , next, operation }, e.target.innerText);
-      if (result.total || result.total === null){
+      if (result.total || result.total === null ){
         setTotal(result.total)
+        console.log(result.total)
       }
-      if (result.operation || result.operation === null){
+      if (result.operation || result.operation === null ){
         setOperation(result.operation)
       }
       if (result.next || result.next === null){
