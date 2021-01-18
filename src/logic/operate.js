@@ -13,6 +13,9 @@ export default function operate(numberOne, numberTwo, operation) {
     return figureOne.times(figureTwo).toString();
   }
   if (operation === '÷') {
+    if (figureOne.c[0] === 0 || figureTwo.c[0] === 0) {
+      return 'Division by zero is not allowed';
+    }
     return figureOne.div(figureTwo).toString();
   }
   if (operation === '%') {
