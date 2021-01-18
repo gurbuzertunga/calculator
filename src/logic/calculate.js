@@ -64,10 +64,10 @@ export default function calculate(obj, buttonName) {
 
   if (buttonName === '%') {
     if (obj.next) {
-      return { total: (obj.next * 0.01).toString(), next: null };
+      return { total: operate(obj.next, obj.next, buttonName), next: null, operation: null };
       // eslint-disable-next-line no-else-return
     } else if (obj.total) {
-      return { total: (obj.total * 0.01).toString() };
+      return { total: operate(obj.total, obj.total, buttonName), next: null, operation: null };
     }
   }
   if (buttonName === '+/-') {

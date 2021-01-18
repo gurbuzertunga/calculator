@@ -15,5 +15,8 @@ export default function operate(numberOne, numberTwo, operation) {
   if (operation === '÷') {
     return figureOne.div(figureTwo).toString();
   }
+  if (operation === '%') {
+    return figureOne.times(0.01).toString();
+  }
   return 'error';
 }
