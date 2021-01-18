@@ -13,7 +13,7 @@ function App() {
       var result = calculate({ total , next, operation }, e.target.innerText);
       if (result.total || result.total === null ){
         setTotal(result.total)
-        console.log(result.total)
+        
       }
       if (result.operation || result.operation === null ){
         setOperation(result.operation)
