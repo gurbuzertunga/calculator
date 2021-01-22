@@ -1,10 +1,13 @@
 import { render, mount } from 'enzyme';
 import { expect as chaiExpect } from 'chai';
+import toJson from 'enzyme-to-json';
 import Display from '../display';
 
 describe('It works', () => {
   it('renders without crashing', () => {
     render(<Display />);
+    const tree = shallow(<Display />);
+    expect(toJson(tree)).toMatchSnapshot();
   });
 
   it('renders the props correctly', () => {

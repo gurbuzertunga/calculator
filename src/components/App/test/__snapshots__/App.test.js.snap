@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It works renders without crashing 1`] = `
+<BrowserRouter>
+  <navbar />
+  <div
+    className="container d-flex flex-column app rounded justify-content-center "
+  >
+    <Routes>
+      <Route
+        element={<About />}
+        exact={true}
+        path="/"
+      />
+      <Route
+        element={
+          <div
+            className="calculator align-self-center"
+          >
+            <Display
+              next={null}
+              op={null}
+              total="0"
+            />
+             
+            <ButtonPanel
+              handleClick={[Function]}
+            />
+             
+          </div>
+        }
+        exact={true}
+        path="/calculator"
+      />
+      <Route
+        element={<quote />}
+        exact={true}
+        path="/quote"
+      />
+    </Routes>
+  </div>
+</BrowserRouter>
+`;
