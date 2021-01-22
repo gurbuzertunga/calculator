@@ -13,4 +13,8 @@ describe('It works', () => {
     chaiExpect(button.props().color).to.equal('red');
     chaiExpect(button.props().name).to.equal('button');
   });
+  it('renders the content correctly', () => {
+    const button = mount(<Button className="hello" color="red" name="button" />);
+    chaiExpect(button.text()).to.contain('button');
+  });
 });
