@@ -1,4 +1,4 @@
-import { render, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import { expect as chaiExpect } from 'chai';
 import { BrowserRouter, Link } from 'react-router-dom';
 import Navbar from '../navbar';

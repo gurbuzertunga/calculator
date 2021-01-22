@@ -1,5 +1,5 @@
-import operate from './operate';
-import isNumber from '../helpers/calculateHelper';
+import operate from '../operate/operate';
+import isNumber from '../../helpers/calculateHelper';
 
 export default function calculate(obj, buttonName) {
   if (buttonName === 'AC') {

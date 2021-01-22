@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 import Display from '../Display/display';
 import ButtonPanel from '../ButtonPanel/buttonPanel';
-import calculate from '../../logic/calculate';
+import calculate from '../../logic/calculate/calculate';
 
 import Navbar from '../Navbar/navbar';
 import Quote from '../Quote/quote';
