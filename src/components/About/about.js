@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-const about = () => (
+const About = () => (
   <div className="hello">
     <h1 className=" mb-5">Welcome to our page</h1>
     <p>
@@ -8,4 +8,4 @@ const about = () => (
   </div>
 );
 
-export default about;
+export default About;

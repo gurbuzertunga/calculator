@@ -24,5 +24,10 @@
     "ignorePatterns": [
       "dist/",
       "build/"
-    ]
+    ],
+    "globals": {
+      "shallow": true,
+      "render": true,
+      "mount": true
+  }
   }
