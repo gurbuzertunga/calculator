@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It works renders without crashing 1`] = `
+<div
+  className="display w-100 d-flex flex-column justify-content-end align-items-center"
+>
+  <div
+    className="total w-100 d-flex justify-content-end align-items-center"
+  >
+    0
+  </div>
+  <div
+    className="op w-100 d-flex justify-content-end align-items-center"
+  >
+    0
+  </div>
+  <div
+    className="next  w-100 d-flex justify-content-end align-items-center"
+  >
+    0
+  </div>
+</div>
+`;

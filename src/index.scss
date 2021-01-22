@@ -1,0 +1,38 @@
+@import "~bootstrap/scss/bootstrap";
+
+.app {
+  padding-top: 100px;
+}
+
+p,
+a,
+h1 {
+  user-select: none !important;
+}
+
+.btn {
+  height: 100px;
+  border-radius: 0;
+  border: 1px rgb(167, 170, 170) solid;
+}
+
+.display {
+  height: 100px;
+  font-size: 40px;
+}
+
+#orange {
+  background-color: rgb(231, 117, 9);
+}
+
+.h100 {
+  height: 100vh;
+}
+
+#root {
+  background-color: rgb(107, 107, 107);
+}
+
+.calculator {
+  width: 600px;
+}
