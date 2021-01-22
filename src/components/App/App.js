@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
-import Display from './display';
-import ButtonPanel from './buttonPanel';
-import calculate from '../logic/calculate';
+import Display from '../Display/display';
+import ButtonPanel from '../ButtonPanel/buttonPanel';
+import calculate from '../../logic/calculate';
 
-import Navbar from './navbar';
-import Quote from './quote';
-import About from './about';
+import Navbar from '../Navbar/navbar';
+import Quote from '../Quote/quote';
+import About from '../About/about';
 
 function App() {
   const [total, setTotal] = useState('0');

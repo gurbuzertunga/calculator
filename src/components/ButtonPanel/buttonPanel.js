@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Button from './button';
+import Button from '../button/button';
 
 function ButtonPanel({ handleClick }) {
   return (
